@@ -17,7 +17,7 @@ module Helper = struct
     let run_list n result = 
       print_results n result show_logic_int_list reify_list 
   end 
-  
+(*  
 let rec appendo xs ys out = ocanren (
     xs == [] & ys == out | 
     fresh h, t, r in 
@@ -25,10 +25,10 @@ let rec appendo xs ys out = ocanren (
       (appendo t ys r) & 
       h :: r == out   
   ) 
- 
+ *)
 (* File "appendo.ml", line 37, characters 14-16:
    Parse error: ')' expected after [ocanren_expr] (in [ocanren_embedding]) *)
-(*
+
 let rec appendo xs ys out = ocanren (
     xs == [] & ys == out | 
     fresh h, t, r in 
@@ -36,7 +36,6 @@ let rec appendo xs ys out = ocanren (
       appendo t ys r & 
       h :: r == out   
   )
-*)
  
 let _ =                       
   Helper.run_list 1 @@ 
